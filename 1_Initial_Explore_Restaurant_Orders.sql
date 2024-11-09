@@ -12,31 +12,7 @@ FINDINGS: It looks like there are quite a variety of menu items that the restaur
 We also noticed that the restaurant sells different categories of menu.
 */
 
--- 2. Find number of menu_items that the restaurant sells. 
 
-SELECT
-	COUNT(menu_item_id) 
-FROM menu_items;
-
--- FINDINGS: It looks like there are 32 different menu items. 
-
-/* From 1. we noticed that the restaurant sells quite a few categories 
-so let's explore these categories.
-*/
-
--- 3. Different categorries of menu_items
-SELECT DISTINCT category
-FROM menu_items;
-
-/* FINDINGS: Based on the results retrieved from the above query, we note that the 32 menu items fall under four categories
-These categories are:
-i. American
-ii. Asian
-iii. Mexican
-iv. Italian
-
-It looks like the restaurant sells quite a variety of food items. 
-*/
 
 -- 4. Least and most expensive items on the menu
 -- Part 1 : Least expensive menu_item
