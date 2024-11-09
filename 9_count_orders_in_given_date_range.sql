@@ -3,12 +3,14 @@
 
 SELECT
 	COUNT(DISTINCT order_id)
-FROM order_details;	
+FROM 
+    order_details;	
 
 
 SELECT 
 	COUNT(*)
-FROM order_details;
+FROM 
+    order_details;
 
 /*
  FINDINGS: 

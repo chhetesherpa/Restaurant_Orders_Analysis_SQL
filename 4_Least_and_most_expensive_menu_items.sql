@@ -4,8 +4,10 @@
 SELECT 
 	item_name,
     price
-FROM menu_items
-ORDER BY price
+FROM 
+    menu_items
+ORDER BY 
+    price
 LIMIT 1;
 
 -- FINDINGS: It looks like the least expensive menu_item is Edamame with a price point of 5.00
@@ -15,8 +17,10 @@ LIMIT 1;
 SELECT 
 	item_name,
     price
-FROM menu_items
-ORDER BY price DESC
+FROM 
+    menu_items
+ORDER BY 
+    price DESC
 LIMIT 1;
 
 -- FINDINGS: It looks like the most expensive menu_item is Shrimp Scampi with respective price of 19.95

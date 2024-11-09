@@ -5,8 +5,10 @@ SELECT
 	category,
 	COUNT(menu_item_id) AS dish_count,
     AVG(price) AS average_price
-FROM menu_items
-GROUP BY category;
+FROM 
+    menu_items
+GROUP BY 
+    category;
 
 -- FINDINGS below: 
 -- 

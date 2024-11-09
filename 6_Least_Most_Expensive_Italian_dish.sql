@@ -5,9 +5,12 @@ SELECT
 	item_name,
     category,
     price AS least_expensive_italian
-FROM menu_items
-WHERE category = 'Italian'
-ORDER BY price
+FROM 
+    menu_items
+WHERE 
+    category = 'Italian'
+ORDER BY 
+    price
 LIMIT 1;
 
 -- FINDINGS: Spaghetti is the least expensive Italian dish that cost 14.5
@@ -18,9 +21,12 @@ SELECT
 	item_name,
     category,
     price AS most_expensive_italian
-FROM menu_items
-WHERE category = 'Italian'
-ORDER BY price DESC
+FROM 
+    menu_items
+WHERE 
+    category = 'Italian'
+ORDER BY 
+    price DESC
 LIMIT 1;
 
 -- FINDINGS: Shrimp Scampi is the least expensive Italian dish that cost 14.5

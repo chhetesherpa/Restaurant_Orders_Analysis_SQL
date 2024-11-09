@@ -1,12 +1,15 @@
 -- 8. View the order details table. What is the date range of the table?
 
-SELECT *
-FROM order_details;
+SELECT 
+    *
+FROM 
+    order_details;
 
 SELECT 
 	MIN(order_date),
 	MAX(order_date)
-FROM order_details;
+FROM 
+    order_details;
 
 /*
  FINDINGS: 

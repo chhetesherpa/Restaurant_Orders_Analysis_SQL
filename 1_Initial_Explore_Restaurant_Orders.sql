@@ -3,8 +3,10 @@ USE restaurant_db;
 
 -- 1. Exploring the menu_items.
 
-SELECT *
-FROM menu_items
+SELECT 
+	*
+FROM 
+	menu_items
 LIMIT 10;
 
 /* 
