@@ -2,4 +2,5 @@
 
 SELECT
 	COUNT(menu_item_id) 
-FROM menu_items;
+FROM 
+    menu_items;

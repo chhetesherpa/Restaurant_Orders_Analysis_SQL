@@ -1,5 +1,6 @@
 -- 4. Least and most expensive items on the menu
 -- Part 1 : Least expensive menu_item
+
 SELECT 
 	item_name,
     price
@@ -10,6 +11,7 @@ LIMIT 1;
 -- FINDINGS: It looks like the least expensive menu_item is Edamame with a price point of 5.00
 
 -- Part 2: Most expensive menu_item
+
 SELECT 
 	item_name,
     price
