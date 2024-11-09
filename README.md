@@ -18,4 +18,4 @@ Below are the main objectives of the project.
 3. Finally, using the two tables ('menu_item' and 'order_details'), explore how customers are reacting to the new menu.
 
 # SQL Query
-For SQL queries related to this project, please explore 'explore_restaurant_orders.sql' file.
+For SQL queries related to this project, please check out 'explore_restaurant_orders.sql' file.
