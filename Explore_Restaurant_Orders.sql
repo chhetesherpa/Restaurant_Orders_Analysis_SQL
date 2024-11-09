@@ -16,6 +16,8 @@ FINDINGS: It looks like there are quite a variety of menu items that the restaur
 We also noticed that the restaurant sells different categories of menu.
 */
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 -- Question 2. 
 -- Find number of menu_items that the restaurant sells. 
 
@@ -23,6 +25,8 @@ SELECT
 	COUNT(menu_item_id) AS Total_Count
 FROM 
     menu_items;
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Question 3. 
 -- Different categorries of menu_items
@@ -42,6 +46,8 @@ iv. Italian
 
 It looks like the restaurant sells quite a variety of food items. 
 */
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Question 4. 
 -- Least and most expensive items on the menu
@@ -71,6 +77,8 @@ LIMIT 1;
 
 -- FINDINGS: It looks like the most expensive menu_item is Shrimp Scampi with respective price of 19.95
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 -- Question 5. 
 -- Count number of Italian dishes in the menu
 
@@ -82,6 +90,8 @@ WHERE
     category = 'Italian';
 
 -- FINDINGS: It looks like there are a total of 9 italian dishes that the restaurant sells.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Question 6. 
 -- What are the least and most expensive Italian dishes on the menu
@@ -117,6 +127,7 @@ LIMIT 1;
 
 -- FINDINGS: Shrimp Scampi is the least expensive Italian dish that cost 14.5
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Question 7. 
 -- How many dishes are in each category? What is the average of dish price in each category? 
@@ -141,6 +152,8 @@ Italian		9				16.75
 
 */
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 -- Question 8. 
 -- View the order details table. What is the date range of the table?
 
@@ -161,6 +174,7 @@ FROM
   The last date is 2023-03-31
 */
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Question 9. 
 -- How many orders were made within this date range? How many items were ordered within this date range?
@@ -181,6 +195,9 @@ FROM
  The total orders made were 5,370.
   The total items ordered were 12,234.
 */
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Question 10. 
 -- Which order had the most number of items?
@@ -207,6 +224,9 @@ ORDER BY
  443, and
  2675
 */
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Question 11. 
 -- How many orders had more than 12 items?
@@ -242,6 +262,9 @@ FROM
     HAVING 
         number_of_items > 12) AS num_orders;
 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 -- Question 12. 
 -- Combining the menu_items and order_details table into a single table
 
@@ -251,6 +274,9 @@ FROM
     menu_items
     LEFT JOIN order_details
 		ON menu_items.menu_item_id = order_details.item_id;
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
  -- Question 13. 
  -- What were the least and most ordered items? What categories were they in? 
@@ -273,6 +299,8 @@ ORDER BY
 */
 
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 -- Question 14. 
 -- What were the top 5 orders that spent the most money?
 
@@ -292,6 +320,9 @@ LIMIT 5;
  FINDINGS: Top 5 order_id that drove highest spend were 440, 2075, 1957, 330 and 2675
  
  */
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
  -- Question 15. 
  -- View the details of the highest spend order. What specific items were purchased? 
@@ -317,6 +348,9 @@ WHERE
 GROUP BY 
     category;
 -- For the highest spend order, Italian food was ordered the most with 8 orders in total. 
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- Question 16. 
 -- View the details of the top 5 highest spend orders
@@ -348,9 +382,12 @@ GROUP BY
 
   */ 
  
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
  -- Question 17. 
  -- How much was the most expensive order in the dataset? 
- 
+
  SELECT 
 	order_id,
     SUM(price) AS total_spend
