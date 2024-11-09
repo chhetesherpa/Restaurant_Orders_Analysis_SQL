@@ -16,55 +16,10 @@ We also noticed that the restaurant sells different categories of menu.
 
 
 
--- 5. Count number of Italian dishes in the menu
-SELECT 
-	COUNT(menu_item_id)
-FROM menu_items
-WHERE category = 'Italian';
 
--- FINDINGS: It looks like there are a total of 9 italian dishes that the restaurant sells.
 
--- 6. What are the least and most expensive Italian dishes on the menu
--- Part 1 : Least expensive Italian dish
-SELECT
-	item_name,
-    category,
-    price AS least_expensive_italian
-FROM menu_items
-WHERE category = 'Italian'
-ORDER BY price
-LIMIT 1;
--- FINDINGS: Spaghetti is the least expensive Italian dish that cost 14.5
 
--- Part 2 : Most expensive Italian dish
-SELECT
-	item_name,
-    category,
-    price AS most_expensive_italian
-FROM menu_items
-WHERE category = 'Italian'
-ORDER BY price DESC
-LIMIT 1;
--- FINDINGS: Shrimp Scampi is the least expensive Italian dish that cost 14.5
 
--- 7. How many dishes are in each category? What is the average of dish price in each category? 
-SELECT 
-	category,
-	COUNT(menu_item_id) AS dish_count,
-    AVG(price) AS average_price
-FROM menu_items
-GROUP BY category;
-
--- FINDINGS below: 
--- 
-/* 
-Category    dish_count    Avg_price
-American	6				10.06
-Asian		8				13.47
-Mexican		9				11.8
-Italian		9				16.75
-
-*/
 
 -- 8. View the order details table. What is the date range of the table?
 SELECT *
