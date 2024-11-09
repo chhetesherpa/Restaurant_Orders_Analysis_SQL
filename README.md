@@ -16,3 +16,6 @@ Below are the main objectives of the project.
 1. Explore the menu_items table to get an idea of what's on the new menu.
 2. Explore the order_details table to get an idea of the data that's been collected.
 3. Finally, using the two tables ('menu_item' and 'order_details'), explore how customers are reacting to the new menu.
+
+# SQL Query
+For SQL queries related to this project, please explore 'explore_restaurant_orders.sql' file.
